@@ -1,0 +1,276 @@
+body{
+    background-color:  hsl(180, 12%, 8%);
+    overflow-x: hidden !important;
+}
+
+.navbar-expand-lg img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.header .navbar-toggler {
+    color: var(#fff);
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+i{
+    color: #fff !important;
+}
+.dropdown-menu{
+    background-color: black;
+   
+}
+
+.dropdown-menu li a{
+    color: #00FB00 !important;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: hsl(180, 12%, 8%);
+    border-bottom: 1px solid #fff;
+  margin-top: -25px !important;
+  padding-top: 20px;
+    z-index: 2;
+}
+
+.header .navbar-brand {
+    background-color: transparent !important;
+    width: 7.5rem;
+    margin-top: -0.1rem;
+
+}
+
+.navbar-expand-lg {
+    background-color: transparent !important;
+}
+
+.btn-outline-success{
+    margin-right: 25px !important;
+    background-color: #00FB00 !important;
+    color: black !important;
+
+}
+.btn-outline-success:hover{
+   
+    background-color:green !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+
+}
+
+.header .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+    font-family: sans-serif;
+
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: hsl(79, 72%, 55%);
+}
+
+.heading-member{
+    width: 100%;
+    position: relative;
+    top: 70px;
+    /* border: 1px solid #fff; */
+    height: 500px;
+    background-image: url(../assets/images/member\ updated.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
+    overflow-x: hidden;
+}
+
+.heading-member h1{
+    font-size: 50px !important;
+    text-transform: capitalize;
+    color:  hsl(79, 72%, 55%);
+    margin-bottom: 20px;
+    position: relative;
+    top: 70px;
+  
+}
+
+.card{
+    margin-top: 150px;
+    width: 500px;
+    border: 2px solid #00FB00 ;
+    background-color: rgba(0, 0, 0, 0.232);
+    
+}
+
+ .fa-check{
+    
+    font-size: 30px;
+    float: right;
+    color: #00FB00 !important;
+}
+.fa-xmark{
+    color: black !important;
+    float: right;
+    font-size: 30px;
+}
+
+.card-text span{
+    color: black !important;
+}
+
+.card-title{
+    font-size: 70px;
+    color: #00FB00;
+}
+.card-subtitle{
+    padding:30px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    color: beige !important;
+}
+.card-text{
+    padding: 8px 40px;
+    font-size: 20px;
+    color: white;
+}
+
+
+.container-col{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 90px;
+    overflow-x: hidden !important;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+ .social-links i{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links i:hover{
+	color: #24262b !important;
+	background-color:  hsl(79, 97%, 77%) ;
+}
+@media (max-width:576px){
+    .heading-member h1{
+        font-size: 30px !important;
+    }
+    .heading-member{
+        height: 400px;
+        position: relative !important;
+        /* top: 10% !important; */
+        /* margin-top: 500px !important; */
+    }
+    .navbar-collapse{
+        background-color: black;
+    }
+    
+}
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+      
+      
+
+@media (max-width:767px){
+ .card{
+    width: 100%;
+    overflow-x: hidden;
+ }
+ .card-title{
+    font-size: 40px;
+ }
+ .card-text{
+    font-size: 18px;
+ }
+ .card i{
+    float: right;
+    font-size: 20px;
+ }
+
+ i{
+    margin-right: 20px !important;
+ }
+}
+@media (min-width: 768px) and (max-width: 1100px) {
+.card{
+    width: 100%;
+}
+
+}

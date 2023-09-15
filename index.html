@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="keywords"
+        content="prime fitness equipment, prime fitness bonney lake, prime fitness oxford, prime fitness single stack,prime fitness membership, prime fitness,prime fitness handles,prime fitness locations,prime fitness gym,prime fitness clarksville">
+
+    <meta name="description"
+        content="Prime Fitness is a cutting-edge fitness facility dedicated to helping individuals achieve their health and wellness goals through state-of-the-art equipment and personalized training programs.">
+
+    <meta name="author" content="prime-fitness">
+
+    <meta name="robots" content="ALL, FOLLOW , INDEX">
+
+
+
+
+    <title>Prime Fitness</title>
+
+
+
+    <!-- favicon link -->
+    <link rel="icon" href="./assets/images/favicon 2.png">
+
+    <!-- bootstrap css cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- aos library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- sweet alert  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css folder/index.css">
+
+</head>
+
+<body>
+    <!-- navbar start  -->
+    <div class="wrapper">
+        <header id="header">
+            <div class="header">
+                <div class="container-fuid">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+
+                        <a class="navbar-brand" href="index.html">
+                            <img src="./assets/images/favicon 2.png" alt="logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <i class="fa-solid fa-bars-staggered "></i>
+                        </button>
+                        <div class="collapse navbar-collapse text-center" id="navbarNav">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="faq.html">Faqs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link " href="form.html">Form</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Others
+                                    </a>
+                                    <ul class="dropdown-menu ">
+                                        <li><a class="dropdown-item" href="cycling.html">Cycling</a></li>
+                                        <li><a class="dropdown-item" href="swimming.html">Swimming</a></li>
+                                        <li><a class="dropdown-item" href="sport.html">Sports & fitness</a></li>
+                                        <li><a class="dropdown-item" href="group.html">Group exercise</a></li>
+                                        <li><a class="dropdown-item" href="member.html">Member ship</a></li>
+                                        <li><a class="dropdown-item" href="salon.html">Salon & Spa</a></li>
+                                        <li><a class="dropdown-item" href="gallery.html">Gallery</a></li>
+                                        <li><a class="dropdown-item" href="product.html">Gym Equipment</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            <!-- <a href="login.html"><button class="btn btn-outline-success  " id="registerBtn"
+                                    type="submit">Register</button></a> -->
+                            <a><button class="btn btn-outline-danger me-4" id="registerBtn" type="submit"
+                                    onclick="localStorage.setItem('user','false'); location.href='./login.html';">SignOut</button></a>
+                        </div>
+
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- navbar end -->
+
+        <!-- hero section start -->
+
+        <section class="banner-section" id="home" data-aos="fade-up" data-aos-duration="1000">
+            <div class="container-fluid px-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 mt-5 first-div  ">
+                            <h4 class="text-center-sm heading">MAKE YOUR</h4>
+                            <h2 class="heading-hello">BODY SHAPE</h1>
+                                <p>Unlock Your Full Fitness Potential: Explore the Ultimate Gym Workouts for Strength,
+                                    Cardio,
+                                    and Muscle Building to Attain Your Dream Body and Optimal Health."</p>
+
+                                <a href="form.html"> <button class="main-btn">Get Started</button></a>
+                        </div>
+                    </div>
+                    <div class="traingle">
+                        <div class="home__traingle home__traingle-3"></div>
+                        <div class="home__traingle home__traingle-2"></div>
+                        <div class="home__traingle home__traingle-1"></div>
+                        <img src="./assets/images/home.png" alt="">
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    </section>
+
+    <!-- hero section end -->
+
+    <!-- dumbles section -->
+    <div class="dumble-container dumbler">
+        <img src="./assets/images/Screenshot_2023-08-05_133809-removebg-preview.png" alt="" id="dumbles"
+            class="d-none d-lg-block">
+        <img src="./assets/images/Screenshot_2023-08-05_133809-removebg-preview.png" alt="" id="dumble"
+            class="about-col d-none d-lg-block">
+    </div>
+
+    <!-- about section start -->
+    <section class="bg-main bg-color hero-section about" data-aos="fade-up" data-aos-duration="1000">
+        <h1 class="text-center">About us</h1>
+        <br><br>
+        <div class="container-fluid ">
+            <div class="row mb-5 ">
+                <div class="col-xl-6 xol-lg-6 col-md-12 col-12  order-lg-1 hero-image--section ">
+                    <div class="text-md-end text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
+
+                        <img src="./assets/images/about.png" class="img-section" alt="">
+
+                    </div>
+                </div>
+                <div
+                    class="d-flex flex-column align-items-start justify-content-center col-xl-6 xol-lg-6 col-md-12 col-12 order-1  text-md-start text-center">
+                    <h1 class=" aboutt  fw-bolder text-dark">
+                        Discover Prime Fitness and Expertise.
+                    </h1>
+                    <p class="mt-3 mb-5  para-width text-light-grey ">
+                        Prime Fitness is fitness club established in the year 1982. The fitness club has
+                        equipped with all basic fitness equipment and also included the newly introduced.
+                        The Prime fitness club is the flagship brand for Prime Fitness Club Ltd, a UN based
+                        health and fitness services provider and a pioneer in the “Integrated Health Club
+                        Management Solutions business. Prime Fitness Club ltd focuses on staying fit is most
+                        important to meet the challenging requirements.
+                    </p>
+                    <div class="text-center w-100 text-md-start">
+                        <a href="about.html"> <button class="btn btn-success px-5 py-2 ">Read more
+                            </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section end -->
+
+    <!-- member section start -->
+    <div class="container member-container ">
+        <h1 class="member text-center" data-aos="zoom-in" data-aos-duration="1000">Our Packages</h1>
+        <div class="row  ">
+            <div class="col-sm-6 col-md-6 mb-3 mb-sm-0">
+                <div class="d-flex justify-content-center">
+                    <div class="card " data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body first-card">
+                            <h5 class="card-title text-center">Basic</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Included</h6>
+                            <p class="card-text">ANY DAY ACCESS <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">BRING A GUEST FREE* <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">UNLIMITED SAUNA <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text x-mark">KIDS-CLUB FIRST CHILD FREE <i class="fa-solid fa-xmark"></i></p>
+                            <p class="card-text x-mark">UNLIMITED CYRO THERAPHY <i class="fa-solid fa-xmark"></i></p>
+                            <p class="card-text x-mark">UNLIMITED HYDRO MASSAGE <i class="fa-solid fa-xmark"></i></p>
+                            <p class="card-text x-mark">UNLIMITED MASSAGE CHAIR <i class="fa-solid fa-xmark"></i></p>
+                            <a href="member.html"><button class="d-flex justify-content-center mx-auto">See
+                                    more</button></a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 ">
+                <div class="d-flex justify-content-center">
+                    <div class="card" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Premium</h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Included</h6>
+                            <p class="card-text">ANY DAY ACCESS <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">BRING A GUEST FREE* <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">UNLIMITED SAUNA <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">KIDS-CLUB FIRST CHILD FREE <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">UNLIMITED CYRO THERAPHY <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">UNLIMITED HYDRO MASSAGE <i class="fa-solid fa-check"></i></p>
+                            <p class="card-text">UNLIMITED MASSAGE CHAIR <i class="fa-solid fa-check"></i></p>
+                            <a href="member.html"><button class="d-flex justify-content-center mx-auto">See
+                                    more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- member section end  -->
+
+    <!-- best product section  -->
+    <section class="image-text-section" style="background-color: hsl(180, 12%, 8%);">
+        <h1 class="text-center">Our Best Product</h1>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-6 mt-5 text" data-aos="left" data-aos-duration="1000">
+                    <h2 class="section-heading">Whey Protein</h2>
+                    <h2 class="section-subheading">Why Choose Prime Fitness Whey Protein?</h2>
+                    <p class="section-content">Whey protein is not just any protein; it's a superior source of nutrition
+                        that can play a vital role in supporting your fitness journey. Whether you're an athlete, a
+                        fitness enthusiast, or someone looking to enhance their overall well-being, whey protein has
+                        something to offer for everyone.</p>
+                    <a href="product.html"><button class="product-button">See All Products</button></a>
+
+                </div>
+                <div class="col-md-6 col-lg-6 whey-image" data-aos="right" data-aos-duration="1000">
+                    <img src="./assets/images/whey proten.png" alt="Image" class="section-image img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- best product section end  -->
+
+    <!-- facilities section start  -->
+    <div class=" container heading-gym text-center ">Gym Facilities</div>
+    <div class="facilities-container" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="card-container" style="--clr:#009688;">
+            <div class="imgBx"><img src="./assets/images/gym cycling.png" alt=""> </div>
+            <div class="content">
+                <h2>cycling</h2>
+                <p>Get your heart racing with our exhilarating indoor cycling classes.</p>
+                <a href="cycling.html">See More</a>
+            </div>
+
+        </div>
+
+        <div class="card-container" style="--clr:#ff3e7f;">
+            <div class="imgBx"><img src="./assets/images/gym swimming pool.png" alt=""> </div>
+            <div class="content">
+                <h2>swimming</h2>
+                <p>Dive into our pristine pool for a refreshing aquatic workout.</p>
+                <a href="swimming.html">See More</a>
+            </div>
+
+
+
+        </div>
+
+        <div class="card-container" style="--clr:#03a9f4;">
+            <div class="imgBx"><img src="./assets/images/gym salon & spa.png" alt=""> </div>
+            <div class="content">
+                <h2>Salon & Spa</h2>
+                <p> Pamper yourself with relaxing spa treatments and salon services.</p>
+                <a href="./salon.html">See More</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- facilities end  -->
+
+    <!-- reviews section start -->
+
+    <div class="slider-container">
+        <h1 class="text-center">Customer Reviews</h1>
+        <div class="slider">
+            <div class="slide">
+                <img src="./assets/images/client 1.png" alt="">
+                <p>"Excellent facilities and friendly staff. Highly recommended!"</p>
+                <span class="author">- John Doe</span>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/client 2.png" alt="">
+                <p>"I love this place. The swimming pool is fantastic!"</p>
+                <span class="author">- Jane Smith</span>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/client 3.png" alt="">
+                <p>"The spa services here are top-notch. I feel rejuvenated!"</p>
+                <span class="author">- Alice Johnson</span>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/client 4.png" alt="">
+                <p>"This gym has changed my life. I've never been healthier!"</p>
+                <span class="author">- Mark Wilson</span>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/client 5.png" alt="">
+                <p>"The trainers are knowledgeable, and the equipment is top quality."</p>
+                <span class="author">- Emily Davis</span>
+            </div>
+            <div class="slide">
+                <img src="./assets/images/client 6.png" alt="">
+                <p>"I've been a member for years and still loving it!"</p>
+                <span class="author">- Michael Brown</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- review section end  -->
+
+
+    <!-- program section start -->
+    <div class="container combined-topic-section">
+        <div class="row d-flex justify-content-center hading">
+            <h2>Our Programs</h2>
+
+            <div class="topic-card sports-fitness" data-aos="flip-left" data-aos-duration="1000">
+                <h3>Sports Fitness</h3>
+                <p> Elevate your athleticism with our Sports Fitness programs. Get in shape, improve your sports
+                    performance, and achieve your fitness goals with specialized training tailored to your sport.</p>
+                <a href="sport.html" class="sport">Learn More</a>
+                <div class="image">
+                    <img src="./assets/images/home-sports-removebg-preview.png" alt="" class="sport-img text-center">
+                </div>
+            </div>
+            <div class="topic-card group-exercise" data-aos="flip-right" data-aos-duration="1000">
+                <h3>Group Exercise</h3>
+                <p> Join our energizing Group Exercise classes designed for all fitness levels. Experience the fun of
+                    working out in a supportive community while getting fit and healthy together.</p>
+                <a href="group.html">Learn More</a>
+                <div class="image">
+                    <img src="./assets/images/home-yoga-removebg-preview.png" alt="" class="yoga-img text-center">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- program section end  -->
+
+    <!-- form section start  -->
+
+    <div class="container-fluid joining">
+        <div class="contact-text">
+            <h1 class="text-join">Join Today</h1>
+        </div>
+        <div class="btn">
+            <a href="login.html"> <button type="button">Join Now</button></a>
+        </div>
+    </div>
+
+    <!-- contact us section start  -->
+
+    <div class="container " id="Contact" data-aos="zoom-in" data-aos-duration="1000">
+        <h1 class="text-center main-heading">Contact us</h1>
+        <div class="contact-in">
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0942983004816!2d67.06435057514948!3d24.79222434798502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33daf36175ca7%3A0xebb40852458f64ca!2sPrime%20Fitness!5e0!3m2!1sen!2s!4v1692554073804!5m2!1sen!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-form">
+                <h1>Contact Us</h1>
+                <form id="contact-form" action="#" novalidate class="was-validated"
+                    onsubmit="validateAndShowAlert(); return false;">
+                    <div class="mb-3">
+                        <label for="validationDefault01" class="form-label">First Name</label>
+                        <input type="text" class="contact-form-txt form-control" id="validationDefault01" required>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="validationDefault02" class="form-label">Last Name</label>
+                        <input type="text" class="contact-form-txt form-control" id="validationDefault02" required>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="validationDefault03" class="form-label">Message</label>
+                        <textarea class="contact-form-textarea form-control" id="validationDefault03"
+                            required></textarea>
+                        <div class="valid-feedback">Looks good!</div>
+                    </div>
+
+                    <button type="submit" name="submit" class="contact-form-btn btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- contact us end  -->
+
+    <!-- footer section start  -->
+
+
+
+    <footer class="footer">
+        <div class="container-col">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Site Map <img src="" alt=""></h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">Faqs</a></li>
+                        <li><a href="form.html">Enquiry form</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="swimming.html">Swimming</a></li>
+                        <li><a href="cycling.html">Cycling</a></li>
+                        <li><a href="salon.html">Salon & Spa</a></li>
+                        <li><a href="product.html">Gym Equipment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Fitness Program</h4>
+                    <ul>
+                        <li><a href="sport.html"> Sports Fitness</a></li>
+                        <li><a href="group.html">Group Exercise</a></li>
+                        <li><a href="member.html">Membership</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/PrimeFitnessOfficial/" target="_blank"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/primefitnesspk/?hl=en" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/prime-fitness-usa" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section end  -->
+
+
+
+
+
+
+
+    <script src="./js/checkUser.js"></script>
+
+    <script src="./js/main.js"></script>
+
+    bootstrap js cdn
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 350,
+        });
+    </script>
+
+    <!-- jquery cdn -->
+
+
+
+    <!-- sweet alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.min.js"></script>
+
+
+</body>
+
+</html>

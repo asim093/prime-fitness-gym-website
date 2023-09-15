@@ -1,0 +1,1401 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,300&family=Kaushan+Script&family=Montserrat:wght@300;500;600;700;800;900&family=Red+Hat+Display:wght@400;700;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* universal selector */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-x: hidden !important;
+    background-color: hsl(180, 12%, 8%);
+    ;
+}
+
+/* variables css */
+:root {
+    --header-height: 3.5rem;
+
+    /* colors  */
+    --first-color: hsl(79, 72%, 55%);
+    --first-color-light: hsl(79, 97%, 77%);
+    --first-color-alt: hsl(79, 67%, 52%);
+    --first-color-dark: hsl(79, 63%, 50%);
+    --first-color-gray: hsl(79, 6%, 64%);
+    --title-color: hsl(180, 4%, 98%);
+    --title-color-black: hsl(180, 4%, 12%);
+    --text-color: hsl(180, 4%, 72%);
+    --text-color-light: hsl(180, 4%, 65%);
+    --body-color: hsl(180, 12%, 8%);
+
+    /* font and typography */
+    --body-font: 'Red Hat Display', sans-serif;
+    --second-font: 'kaushan script', cursive;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.5rem;
+    --big-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+}
+   
+ 
+/* all heading sizes */
+h1{
+    font-size: 9rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #fff;
+}
+
+h2{
+    color: #fff;
+    font-size: 4.7rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: capitalize;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+h3{
+    color: #fff;
+    font-size: 3.1rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h4{
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+}
+
+h5{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+}
+
+/* all heading sizes end */
+
+
+
+p{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+    color: #fff;
+    font-family: var(--body-font);
+}
+i{
+    color: #fff;
+}
+
+/* navbar css */
+
+.navbar-expand-lg img{
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+    }
+
+    .header .navbar-toggler{
+        color: var(#fff);
+        font-size: 2rem;
+        height: 2.7rem;
+        padding: 0;
+    }
+
+    .header{
+        position: fixed;
+    width: 100%;
+    background-color: hsl(180, 12%, 8%);
+    border-bottom: 1px solid #fff;
+  margin-top: -25px !important;
+  padding-top: 20px;
+    z-index: 2;
+    }
+    /* CSS */
+.navbar-scrolled {
+    background-color: black;
+    color: white; /* Set the font color to white */
+    /* Add any other styles you want for the scrolled navbar here */
+}
+
+
+    .header .navbar-brand{
+        background-color: transparent !important;
+        width: 7.5rem;
+        margin-top: -0.1rem;
+        
+        }
+        .navbar-expand-lg{
+            background-color: transparent !important;
+        }
+        .btn-outline-success{
+            position: relative !important;
+            margin-right: 25px !important;
+            background-color: #00FB00 !important;
+            color: black !important;
+
+        }
+        .btn-outline-success:hover{
+           
+            background-color:green !important;
+            color: #fff !important;
+            border: 1px solid #fff;
+
+        }
+
+        
+        .header .navbar-nav .nav-link{
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 0.5rem 2rem;
+            margin: 0 0.2rem;
+            font-family:sans-serif;
+        
+        }
+        .header .navbar-nav .nav-link:hover,
+        .header .navbar-nav .nav-link.active{
+            color: var(--first-color);
+        }
+        .dropdown-menu{
+            background-color: black;
+           
+        }
+    
+        .dropdown-menu li a{
+            color: #00FB00 !important;
+        }
+
+/* hero section start */
+.first-div{
+    margin-top: 120px !important;
+}
+
+.banner-section{
+    background-color: var(--body-color);
+    min-height: 100vh;
+    position: relative;
+}
+
+h4{
+    -webkit-text-stroke: 1px var(--title-color);
+    color: transparent;
+}
+
+.home__traingle {
+  
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 70px;
+    
+}
+
+.home__traingle-1 {
+    border-left: 210px solid transparent;
+    border-bottom: 210px solid var(--first-color); 
+}
+
+.home__traingle-2 {
+   
+    border-left: 410px solid transparent;
+    border-bottom: 410px solid var(--first-color-alt);
+}
+
+.home__traingle-3 {
+   
+    border-left: 610px solid transparent;
+    border-bottom: 610px solid var(--first-color-dark); 
+}
+.traingle img{
+    position: absolute;
+    top: 180px;
+    height: 500px;
+    width: 800px;
+    right: 0;  
+}
+
+.navbar-scrolled {
+    background-color: white;
+    /* Add any other styles you want for the scrolled navbar here */
+}
+
+.navigation.active {
+    display: block;
+    position: absolute;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--first-color-dark);
+    padding: 10px;
+    z-index: 99;
+}
+
+
+.main-btn{
+   
+    display: inline-block;
+    color: var(--title-color-black);
+    background-color: #00FB00;
+    border: 2px solid black;
+    padding: 18px 32px;
+    transition: background .3s;
+    cursor: pointer;
+    border-radius: 10px;
+    /* font-weight:var(--font-bold); */
+}
+
+.main-btn:hover{
+    background-color: green;
+    color: #fff;
+    border: 1px solid #fff;
+    /* border: 0.2rem solid black; */
+}
+
+/* dumble section start */
+
+.dumble-container{
+    background-color: var(--body-color);
+    height: 200px;
+    width: 100%;
+    
+}
+
+.dumble-container img{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    top:95%;
+    left: 43%;
+    transform: translate(-50%,-50%);
+   
+;
+}
+
+
+/* dumble container end */
+
+/* about section start */
+
+.bg-main{
+    height: 100vh;
+    /* position: relative; */
+    
+}
+
+.bg-color{
+    background-color: var(--body-color);
+}
+
+.btn-success{
+    border-radius: 10px;
+    color: black;
+    background-color: #00FB00;
+    border: 1px solid black !important;
+    z-index: 100 !important;
+    
+}
+
+.btn-success:hover{
+    border-radius: 10px;
+    color: #fff;
+    background-color:green;
+    border: 1px solid #fff !important;
+}
+
+.bg-theme{
+
+    color: var( --bs-supporting-color);
+    background-image: none!important;
+}
+
+
+.hero-section .container{
+    display:grid;
+    place-items: center;
+    height: inherit;
+}
+.hero-section h1{
+    font-size: 3.4rem;
+}
+
+.aboutt h1:first-letter{
+    /*font-size: 10rem;*/
+    initial-letter: 2 ;
+    padding-right: .2rem;
+    color: var(--secondary-color);
+}
+.img-section{
+    height: 550px !important;
+    width: 800px !important;
+    overflow-x: hidden !important;
+    /* border: 1px solid #fff; */
+}
+
+.img-section{
+    width: 30rem;
+    border-radius: 2rem;
+}
+
+.aboutt{
+    -webkit-text-stroke: 1px var(--title-color);
+    color: transparent;
+}
+
+/* about section end */
+
+
+/* member ship section start */
+
+.member-container{
+  z-index: 0 !important;
+  
+
+}
+
+.card{
+    margin-top: 150px;
+    width: 500px;
+    border: 2px solid #00FB00 ;
+    background-color: rgba(0, 0, 0, 0.232);
+    
+}
+
+ .fa-check{
+    
+    font-size: 30px;
+    float: right;
+    color: #00FB00 !important;
+}
+.fa-xmark{
+    color: black !important;
+    float: right;
+    font-size: 30px;
+}
+
+.card-text span{
+    color: black !important;
+}
+
+.card-title{
+    font-size: 70px;
+    color: #00FB00;
+}
+.card-subtitle{
+    padding:30px 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold !important;
+    color: beige !important;
+}
+.card-text{
+    padding: 8px 40px;
+    font-size: 20px;
+    color: white;
+}
+
+.member{
+    color: black;
+    font-size: 80px;
+    position: relative;
+    top: 120px !important;
+}
+
+.member-container{
+  background-color: hsl(180, 12%, 8%);
+}
+
+.member-container h1{
+color: #fff !important;
+position: relative;
+top: 60px;
+}
+
+.member-container button{
+    width: 120px;
+    height: 40px;
+    padding: 5px 0px;
+    margin-top: 40px;
+    border-radius: 5px;
+    background-color: #00FB00;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.member-container button:hover{
+    background-color: green;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+
+.member-container a{
+    text-decoration: none;
+}
+
+/* member ship end  */
+
+/* best product start  */
+
+.image-text-section {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+    margin-top: 40px;
+}
+
+.image-text-section h1 {
+    font-size: 100px !important;
+}
+
+.section-heading {
+    margin-bottom: 20px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--title-color);
+  font-size: 60px !important;
+   
+   
+}
+
+.section-subheading {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+.section-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.whey-image {
+ margin-top: 80px;
+}
+
+.section-image {
+    max-width: 100%;
+    max-height: 600px;
+    margin-bottom: 40px !important;
+}
+
+.product-button {
+    text-decoration: none;
+    height: 50px !important;
+    padding: 5px 5px;
+    background-color: #00FB00;
+    color: black;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.product-button:hover {
+    background-color: green;
+    color: #fff;
+    border:1px solid #fff;
+    border-radius: 10px;
+}
+
+/* best product end  */
+
+/* gym facilities start  */
+
+
+
+.facilities-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+  }
+  
+  .facilities-container .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 350px;
+    height: 450px; /* Fixed height for all cards */
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+  }
+s  
+  
+  .facilities-container .card-container:hover {
+    height: 450px;
+  }
+  
+  .facilities-container .card-container .imgBx {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  
+  .facilities-container .card-container .imgBx img {
+    width: 100%;
+    height: 100%; /* Full height by default */
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  
+  .facilities-container .card-container:hover .imgBx {
+    transform: translateY(-20px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+  }
+  
+  .facilities-container .card-container .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    bottom: -100%; /* Initially hidden below the card */
+    transition: 0.5s;
+  }
+  
+  .facilities-container .card-container:hover .content {
+    bottom: 0; /* Move content to the card's bottom on hover */
+  }
+  
+  .facilities-container .card-container .content h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #009688;
+  }
+  
+  .facilities-container .card-container .content p {
+    color: #333;
+    padding-bottom: 20px;
+  }
+  
+  .facilities-container .card-container .content a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #009688;
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .facilities-container .card-container:hover .content a {
+    background: #333;
+    color: white;
+  }
+
+  .heading-gym{
+    font-size: 100px !important;
+    color: #fff;
+  }
+  
+  .slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    /* margin-top: 50px !important; */
+  }
+
+  .text-center a{
+    text-decoration: none;
+  }
+
+  .slider-container h1{
+    font-size: 80px !important;
+    margin-bottom: 100px;
+    
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  
+  .slide {
+    flex: 0 0 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    /* border: 1px solid #ccc; */
+    transition: opacity 0.5s ease-in-out; /* Add opacity transition */
+  }
+
+  .slide img{
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+  }
+
+  .slide p {
+    margin: 0;
+  }
+
+  .author {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 30px;
+    color: #00FB00;
+  }
+  
+  /* Common heading style */
+.combined-topic-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #009688; /* Choose your desired color */
+}
+
+/* Flexbox container for the cards */
+.hading h2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    font-size: 60px !important;
+    color: #fff !important;
+}
+
+/* Card container style */
+.topic-card {
+    width: 400px;
+    height: 600px;
+    background-color: rgb(21, 18, 18);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 60px;
+    text-align: center;
+}
+
+.topic-card p{
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+/* Sports Fitness card style */
+.sports-fitness {
+    border: 2px solid #00FB00; /* Border color for Sports Fitness */
+}
+
+/* Group Exercise card style */
+.group-exercise {
+    border: 2px solid #00FB00; /* Border color for Group Exercise */
+}
+
+/* Heading and paragraph style within the cards */
+.topic-card h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.topic-card p {
+    font-size: 1rem;
+    color: #fff;
+}
+
+.topic-card a{
+    text-decoration: none;
+    color: black;
+    background-color: #00FB00;
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.topic-card a:hover{
+    color: #fff;
+    background-color: green;
+    border: 1px solid black;
+}
+
+.topic-card img{
+    position: relative;
+    top: 10px;
+}
+
+.yoga-img{
+    height: 250px !important;
+    top: 70px !important;
+}
+
+.sport-img{
+    height: 300px;
+    top: 10px !important;
+}
+
+.joining{
+height: 400px;
+width: 100%;
+background-image: url(../assets/images/sven-mieke-MsCgmHuirDo-unsplash.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+opacity: 0.7;
+}
+
+.contact-text{
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   font-family: 'Times New Roman', Times, serif !important; 
+}
+
+.contact-text h1{
+    color: brown !important;
+   
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.btn button{
+    height: 60px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: #00FB00;
+    border-radius: 10px;
+    color: black;
+}
+
+.btn button:hover{
+    color: #fff;
+    background-color: green;
+    border: 1px solid #fff;
+
+}
+
+.contact-in{
+    width: 80%;
+    height: 650px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 10px; */
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 10px 0px green;
+}
+.main-heading{
+    font-size: 80px !important;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 650px;
+    border-radius: 10px;
+}
+
+.contact-form{
+    width: 100%;
+    height: 400px;
+    flex: 50%;
+    padding: 30px;
+    background-color: #3333338e;
+}
+
+.contact-form h1{
+   margin-bottom: 10px;
+   -webkit-text-stroke: 1px black;
+   color: transparent;
+
+   font-size: 50px;
+   display: flex;
+   justify-content: center;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-form-txt{
+    width: 100%;
+    height: 40px;
+    color: #00FB00;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+
+}
+
+.contact-form-txt::placeholder{
+    color: #aaa;
+
+}
+.contact-form-textarea{
+    width: 100%;
+    height: 100px;
+    color: #00FB00;
+    border: 1px solid #bcbcbc;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.contact-form-textarea::placeholder{
+    color: #aaa;
+}
+
+.contact-form-btn{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background:#00FB00;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.contact-form-btn:hover{
+    color: #fff;
+    background-color: green;
+}
+
+.container-col{
+	max-width: none;
+	margin:0;
+    padding: 0;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+    margin: 0; 
+    padding: 0; 
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+    width: 100%;
+    position: relative;
+    top: 100px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links i{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links i:hover{
+	color: #24262b;
+	background-color:  hsl(79, 97%, 77%);
+}
+
+/*responsive*/
+
+    
+    
+
+
+
+
+
+
+
+
+               /* media queries start   media queries start   media queries start   */ 
+ 
+
+  @media (min-width: 320px) and (max-width: 768px) {
+    
+
+    .about{
+        position: relative !important;
+        bottom: 170px !important;
+        height: 100vh !important;
+        overflow-x: hidden !important;
+    }
+
+
+    .hero-section{
+        margin-top: 150px;
+        overflow-x: hidden !important;
+    }
+    .navbar{
+        overflow-x: hidden !important;
+    }
+    .container-fluid{
+       height: 50vh !important;
+      }
+      .slider-container h1{
+        font-size: 40px !important;
+      }
+
+      .joining{
+        height: 250px !important;
+      }
+
+      .collapse{
+        text-align: center !important;
+      }
+
+      .collapse li a{
+        font-size: 15px !important;
+      }
+     
+      .btn button{
+        height: 40px;
+        width: 80px;
+      }
+
+      .topic-card {
+        width: 100%;
+        height: 470px;
+        background-color: rgb(21, 18, 18);
+        border-radius: 20px;
+        /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); */
+        padding: 20px;
+        margin: 60px;
+        text-align: center;
+    }
+
+    .topic-card img{
+        height: 200px !important;
+    }
+    .sport{
+        position: relative !important;
+        top: 10px !important;
+        
+    }
+
+    .topic-card a{
+       text-align: center;
+    }
+
+    .topic-card h3{
+        font-size: 30px;
+    }
+
+    .topic-card p{
+        font-size: 13px;
+    }
+
+    .sport-img{
+        margin-top: 10px;
+    }
+    .yoga-img{
+       position: relative;
+       
+       /* bottom: 80px; */
+       top: 38px !important;
+    }
+
+    
+    .heading {
+        text-align: center;
+    }
+    .traingle img{
+        height: 212px;
+        top: 310px;
+        width: 290px;
+    }
+    .member{
+        font-size: 50px;
+    }    
+    .button-read{
+margin: 0 auto !important;
+margin-top: 10px !important;
+
+    }
+    .img-section{
+        width: 300px !important;
+        height: 300px !important;
+        overflow-x: hidden !important;
+      
+    }
+.image-text-section h1{
+    font-size: 35px !important;
+}
+  .text h1{
+    font-size: 40px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .text button{
+    display: flex !important;
+    justify-content: center !important;
+    height: 30px !important;
+    width: 80px;
+  }
+
+  .text a{
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-body a{
+    font-size: 18px !important;
+  }
+
+  .section-subheading{
+    font-size: 25px;
+  }
+
+  .section-content{
+    font-size: 13px;
+  }
+
+  .heading-gym{
+    font-size: 50px !important;
+  }
+
+}
+
+@media (min-width: 580px) and (max-width: 1100px) {
+.hero-section{
+    height: 180vh !important;
+}
+
+.text button{
+    display: flex !important;
+    justify-content: center !important;
+    height: 30px !important;
+    width: 100px;
+    font-size: 10px;
+  }
+
+  .text a{
+    text-decoration: none !important;
+    display: flex;
+    justify-content: center;
+  }
+
+
+}
+@media (max-width:900px){
+    ul{
+        background-color:rgb(8, 8, 8) !important;
+    }
+}
+
+@media (max-width:1000px){
+    i{
+        font-size: 30px;
+    }
+    footer{
+        margin-top: 500px;
+    }
+
+    .navbar-collapse{
+        background-color: black !important;
+    }
+}
+
+@media (min-width: 991px) and (max-width: 1100px) {
+    .traingle img{
+        margin-top: 44px !important;
+    }
+
+    .section-image{
+        margin-top: 150px;
+        height: 400px;
+        width: 480px;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .traingle img{
+        height: 312px;
+        width: 450px;
+        margin-top: 224px !important;
+    }
+
+    .text{
+      text-align: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+   .whey-image{
+    width: 100%;
+    margin: 0;
+   }
+
+   .section-image{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 100px;
+  
+}
+    .hero-section{
+height: 210vh !important;
+overflow-x: hidden !important;
+    }
+    
+    .about-content{
+        text-align: center;
+    }
+    .home__traingle{
+        height: 100px !important;
+        top: 420px;
+    
+    }
+    .home__traingle-1 {
+        border-left: 260px solid transparent;
+        border-bottom: 260px solid var(--first-color); 
+    }
+    
+    .home__traingle-2 {
+        border-left: 280px solid transparent;
+        border-bottom: 280px solid var(--first-color-alt);
+    }
+    
+    .home__traingle-3 {
+        border-left: 295px solid transparent;
+        border-bottom: 295px solid var(--first-color-dark); 
+    }
+
+   
+   
+    
+}
+
+
+@media (max-width: 767px) {
+    
+    .first-div {
+        position: relative;
+        bottom: -50px !important;
+        text-align: center;
+    }
+   
+   
+
+.main-btn{
+margin-right: 80px !important;
+text-align: center;
+    }
+    
+  
+    .home__traingle{
+        height: 100px;
+        top: 450px;
+        
+
+    }
+   
+    .home__traingle-1 {
+        border-left: 190px solid transparent;
+        border-bottom: 190px solid var(--first-color); 
+    }
+    
+    .home__traingle-2 {
+        border-left: 230px solid transparent;
+        border-bottom: 230px solid var(--first-color-alt);
+    }
+    
+    .home__traingle-3 {
+        border-left: 260px solid transparent;
+        border-bottom: 260px solid var(--first-color-dark); 
+    }
+    .traingle img{
+        margin-top: 188px;
+    }
+   
+    .heading{
+margin-right: 40px;
+    }
+    .hello{
+        margin-right: 0px;
+    }
+    .facilities-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .facilities-container .card-container {
+        width: 80%;
+        max-width: 350px;
+        margin: 20px 0;
+      }
+
+      .collapse{
+        text-align: center !important;
+      }
+      #registerBtn {
+        display: block !important; 
+        margin: 0 auto !important;
+        margin-top: 20px  !important;
+        text-align: center !important;
+        height: 40px !important;
+        width: 90px !important;
+    }
+}
+
+@media (max-width:590px){
+    body,html{
+        font-size: 7px;
+    }
+    h4{
+        text-align: center;
+        align-items: center;
+}
+.heading{
+
+    margin-left: 50px;
+}
+.main-btn{
+  margin-left: 84px;  
+}
+
+}
+
+@media (min-width: 992px) and (max-width: 1300px) {
+.dumble-container{
+    display: none !important;
+}
+
+
+.img-section{
+    width: 25rem;
+    border-radius: 1rem;
+    overflow-x: hidden;
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 991px) {
+   .card-title{
+    font-size: 40px;
+   }
+.text-join{
+    font-size: 80px;
+}
+   
+}
+/* @media  (min-width: 768px) and(max-width:1100px) {
+.heading-member{
+    position: relative;
+    top: 200px;
+}
+  
+} */
+
+@media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+
+  .footer-col ul{
+    background-color: #24262b !important;
+  }
+
+  .contact-form h1{
+    font-size: 30px !important;
+  }
+  .main-heading{
+font-size: 60px !important;
+  }
+  }
+
+
+
+
+/* media queries end    media queries end   media queries end */
+
+
+

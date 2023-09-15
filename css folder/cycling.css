@@ -1,0 +1,257 @@
+i {
+    color: #fff;
+}
+
+body {
+    background-color: hsl(180, 12%, 8%);
+    overflow-x: hidden;
+}
+
+/* navbar css */
+
+.navbar-expand-lg img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    border-radius: 50%;
+}
+
+.header .navbar-toggler {
+    color: var(#fff);
+    font-size: 2rem;
+    height: 2.7rem;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: hsl(180, 12%, 8%);
+    border-bottom: 1px solid #fff;
+  margin-top: -25px !important;
+  padding-top: 20px;
+    z-index: 2;
+}
+
+.header .navbar-brand {
+    background-color: transparent !important;
+    width: 7.5rem;
+    margin-top: -0.1rem;
+
+}
+
+.navbar-expand-lg {
+    background-color: transparent !important;
+}
+
+.btn-outline-success{
+    margin-right: 25px !important;
+    background-color: #00FB00 !important;
+    color: black !important;
+
+}
+.btn-outline-success:hover{
+   
+    background-color:green !important;
+    color: #fff !important;
+    border: 1px solid #fff;
+
+}
+.dropdown-menu{
+    background-color: black;
+   
+}
+
+.dropdown-menu li a{
+    color: #00FB00 !important;
+}
+.header .navbar-nav .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    margin: 0 0.2rem;
+    font-family: sans-serif;
+
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active {
+    color: hsl(79, 72%, 55%);
+}
+
+/* navbar css end  */
+
+
+
+/* welocome image section start  */
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    background-image: url(../assets/images/{051BFBFC-E58E-4C2D-BE66-B096825FDA3B}.png.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    top: 70px;
+}
+
+/* welcome image section end  */
+
+
+/* images  and content start  */
+.img-section{
+    max-width: 100% !important;
+    height: 300px !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.heading {
+    font-size: 90px;
+    color: #00FB00 !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-transform: capitalize;
+}
+
+.paragraph {
+    font-size: x-large;
+    margin-top: 90px;
+}
+
+.container-fluid {
+    margin-top: 100px;
+}
+
+.img-section {
+    margin-right: 90px;
+    max-width: 100%;
+}
+
+/* content and images end  */
+
+
+/* footer start  */
+.container-col {
+    max-width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #24262b;
+    padding: 70px 0;
+
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    box-sizing: border-box !important;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a i {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover i {
+    color: #24262b;
+    background-color: hsl(79, 97%, 77%);
+}
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    body {
+        overflow-x: hidden !important;
+    }
+    .navbar-expand-lg{
+        background-color: black !important;
+    }
+
+    .heading{
+        font-size: 60px !important
+    }
+
+    i{
+        margin-right: 10px !important;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+/* footer end  */
